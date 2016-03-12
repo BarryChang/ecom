@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/layout/abs__action_bar_tab_bar_view.xml",
-        "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/layout/abs__action_bar_tab_bar_view.xml"
-    },
-    {
         "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/layout/sherlock_spinner_item.xml",
         "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/layout/sherlock_spinner_item.xml"
+    },
+    {
+        "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/layout/abs__action_bar_tab_bar_view.xml",
+        "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/layout/abs__action_bar_tab_bar_view.xml"
     },
     {
         "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/layout/abs__search_dropdown_item_icons_2line.xml",

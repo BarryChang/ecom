@@ -39,8 +39,8 @@ public class PlazaFragment extends Fragment {
         this.initStatistics();
 
         // scroll view
-        ListViewForScrollView notesList = (ListViewForScrollView)view.findViewById(R.id.plaza_notes);
-        notesList.scrollTo(0, 0);
+        ScrollView scrollView = (ScrollView)view.findViewById(R.id.plaza_scroll_view);
+        scrollView.scrollTo(0, 0);
 
         return view;
     }

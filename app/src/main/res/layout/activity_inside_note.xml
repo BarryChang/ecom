@@ -5,16 +5,72 @@
     android:layout_height="match_parent"
     tools:context="com.zzy.ecom.InsideNote">
 
+    <LinearLayout
+        android:id="@+id/inside_note_reply"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/inside_note_my_reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:editable="true" />
+        <Button
+            android:id="@+id/inside_note_commit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="回复"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.zzy.ecom.ListViewForScrollView
+        android:layout_height="match_parent"
+        android:layout_above="@id/inside_note_reply">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:divider="@android:color/darker_gray"
-            android:id="@+id/inside_note_list"
-            android:dividerHeight="10dp">
-        </com.zzy.ecom.ListViewForScrollView>
+            android:orientation="vertical">
+
+            <com.zzy.ecom.ListViewForScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:id="@+id/inside_note_main_note"
+                android:dividerHeight="10dp">
+            </com.zzy.ecom.ListViewForScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="#cc000000"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <com.zzy.ecom.ListViewForScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:id="@+id/inside_note_list"
+                android:dividerHeight="10dp">
+            </com.zzy.ecom.ListViewForScrollView>
+
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
