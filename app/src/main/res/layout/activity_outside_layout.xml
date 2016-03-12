@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#7dffffff">
+
+    <ImageView
+        android:id="@+id/activity_outside_author_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/activity_outside_author"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/activity_outside_author_img"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/activity_outside_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/activity_outside_author_img"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/activity_outside_author"
+        android:textSize="13sp"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:id="@+id/activity_outside_breakline_01"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/activity_outside_subtitle"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/activity_outside_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/activity_outside_breakline_01"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/activity_outside_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/activity_outside_content_title"
+        android:textSize="13sp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <View
+        android:id="@+id/activity_outside_breakline_02"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/activity_outside_content"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/activity_outside_resttime_label"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/activity_outside_breakline_02"
+        android:text="剩余时间:"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/activity_outside_resttime"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="23dp"
+        android:layout_toRightOf="@id/activity_outside_resttime_label"
+        android:layout_below="@id/activity_outside_breakline_02"/>
+
+    <TextView
+        android:id="@+id/activity_outside_join_number"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/activity_outside_breakline_02"
+        android:textSize="23dp"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/activity_outside_join_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/activity_outside_breakline_02"
+        android:scaleType="fitXY"
+        android:src="@drawable/join"/>
+
+
+</RelativeLayout>

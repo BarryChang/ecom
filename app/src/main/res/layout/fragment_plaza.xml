@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/plaza_scroll_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="#cc000000"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/community_name"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:id="@+id/community_bkg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/community_info_layout"
+                android:orientation="horizontal"
+                android:background="#cc000000">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="当前在线"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/current_user_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:text="帖子总数"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/notes_amount_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+
+            <com.zzy.ecom.ListViewForScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:id="@+id/plaza_notes"
+                android:dividerHeight="10dp">
+            </com.zzy.ecom.ListViewForScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

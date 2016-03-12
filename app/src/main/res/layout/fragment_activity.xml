@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.zzy.ecom.ActivityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/check_already_done"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#cc000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/upper_title"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"/>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="19">
+            <com.zzy.ecom.ListViewForScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:id="@+id/joining_activity_list"
+                android:dividerHeight="10dp">
+            </com.zzy.ecom.ListViewForScrollView>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

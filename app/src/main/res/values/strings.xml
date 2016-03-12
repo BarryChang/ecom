@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ecom</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">我的设置</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // actionbar label
+    <string name="title01">社区广场</string>
+    <string name="title02">活动中心</string>
+    <string name="title03">热门推荐</string>
+
+    // plaza
+    <string name="current_user_number">999</string>
+    <string name="notes_amount_number">999</string>
+    <string name="community_name">二主楼社区</string>
+
+    // activity
+    <string name="upper_title">点击查看已经完成的活动</string>
+
+    <string name="title_activity_user_setting">    个人资料设置</string>
+    <string name="title_activity_already_done_activities">    已经完成的活动</string>
+    <string name="title_activity_inside_note">    查看帖子</string>
+    <string name="title_activity_inside">    查看活动</string>
+
+</resources>
