@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zzy.ecom.InsideNote">
+    tools:context=".activity.InsideNote">
 
     <LinearLayout
         android:id="@+id/inside_note_reply"
@@ -39,13 +39,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.zzy.ecom.ListViewForScrollView
+            <com.zzy.ecom.activity.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/inside_note_main_note"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.ListViewForScrollView>
+            </com.zzy.ecom.activity.ListViewForScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,13 +62,13 @@
                     android:textColor="@android:color/white"/>
             </LinearLayout>
 
-            <com.zzy.ecom.ListViewForScrollView
+            <com.zzy.ecom.activity.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/inside_note_list"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.ListViewForScrollView>
+            </com.zzy.ecom.activity.ListViewForScrollView>
 
         </LinearLayout>
     </ScrollView>

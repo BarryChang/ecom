@@ -120,12 +120,12 @@
         "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__spinner_ab_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__menu_dropdown_panel_holo_light.9.png",
-        "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__menu_dropdown_panel_holo_light.9.png"
-    },
-    {
         "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__ab_share_pack_holo_dark.9.png",
         "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__ab_share_pack_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__menu_dropdown_panel_holo_light.9.png",
+        "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__menu_dropdown_panel_holo_light.9.png"
     },
     {
         "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__progress_primary_holo_light.9.png",
@@ -252,12 +252,12 @@
         "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__list_divider_holo_dark.9.png"
     },
     {
-        "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__ab_share_pack_holo_light.9.png",
-        "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__ab_share_pack_holo_light.9.png"
-    },
-    {
         "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__spinner_ab_focused_holo_light.9.png",
         "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__spinner_ab_focused_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__ab_share_pack_holo_light.9.png",
+        "source": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/abs__ab_share_pack_holo_light.9.png"
     },
     {
         "merged": "/Users/ZhangZhiyi/Develop/android/Ecom/libraries/actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/abs__btn_cab_done_default_holo_dark.9.png",

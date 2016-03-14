@@ -1,4 +1,4 @@
-package com.zzy.ecom;
+package com.zzy.ecom.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import com.zzy.ecom.R;
 
 import java.util.ArrayList;
 import java.util.List;

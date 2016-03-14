@@ -1,4 +1,4 @@
-package com.zzy.ecom;
+package com.zzy.ecom.activity;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.*;
+import com.zzy.ecom.R;
 
 
 public class MainMenu extends SlidingFragmentActivity {

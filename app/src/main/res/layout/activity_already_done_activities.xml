@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zzy.ecom.AlreadyDoneActivities">
+    tools:context=".activity.AlreadyDoneActivities">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,13 +13,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="19">
-            <com.zzy.ecom.ListViewForScrollView
+            <com.zzy.ecom.activity.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/already_activity_list"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.ListViewForScrollView>
+            </com.zzy.ecom.activity.ListViewForScrollView>
         </ScrollView>
 
     </LinearLayout>

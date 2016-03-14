@@ -81,13 +81,13 @@
                     android:textSize="25dp"/>
             </LinearLayout>
 
-            <com.zzy.ecom.ListViewForScrollView
+            <com.zzy.ecom.activity.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/plaza_notes"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.ListViewForScrollView>
+            </com.zzy.ecom.activity.ListViewForScrollView>
 
         </LinearLayout>
 

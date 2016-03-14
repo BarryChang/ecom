@@ -1,12 +1,11 @@
-package com.zzy.ecom;
+package com.zzy.ecom.activity;
 
 import android.app.ActionBar;
-import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
+
+import com.zzy.ecom.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

@@ -17,13 +17,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { java.srcDirs = ['src/main/java', 'src/main/java/2'] } }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':libraries:actionbarsherlock')
     compile project(':libraries:SlidingMenu')
-    //compile 'com.android.support:appcompat-v7:21.0.2'
-    //compile 'com.android.support:support-v4:21.0.2'
     compile 'com.android.support:support-v4:21.0.3'
+    compile files('libs/gson-2.2.4.jar')
 }

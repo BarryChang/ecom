@@ -1,25 +1,23 @@
-package com.zzy.ecom;
+package com.zzy.ecom.activity;
 
 import android.app.ActionBar;
-import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.SimpleAdapter;
+
+import com.zzy.ecom.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
-public class InsideNote extends Activity {
+public class InsideActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inside_note);
+        setContentView(R.layout.activity_inside_activity);
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -32,7 +30,7 @@ public class InsideNote extends Activity {
     initMainNote()
     {
         ArrayList<HashMap<String, Object>> noteArrayList = new ArrayList<HashMap<String, Object>>();
-        ListViewForScrollView notesList = (ListViewForScrollView)findViewById(R.id.inside_note_main_note);
+        ListViewForScrollView notesList = (ListViewForScrollView)findViewById(R.id.inside_activity_main_note);
 
         // get time
         long time = System.currentTimeMillis();
@@ -77,7 +75,7 @@ public class InsideNote extends Activity {
     initAnswerList()
     {
         ArrayList<HashMap<String, Object>> noteArrayList = new ArrayList<HashMap<String, Object>>();
-        ListViewForScrollView notesList = (ListViewForScrollView)findViewById(R.id.inside_note_list);
+        ListViewForScrollView notesList = (ListViewForScrollView)findViewById(R.id.inside_activity_list);
 
         // get time
         long time = System.currentTimeMillis();
@@ -117,4 +115,5 @@ public class InsideNote extends Activity {
         itemContent.put("note_answer_content", content);
         list.add(itemContent);
     }
+
 }

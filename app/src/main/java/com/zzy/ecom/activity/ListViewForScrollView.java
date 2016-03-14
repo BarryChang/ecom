@@ -1,4 +1,4 @@
-package com.zzy.ecom;
+package com.zzy.ecom.activity;
 
 import android.content.Context;
 import android.util.AttributeSet;

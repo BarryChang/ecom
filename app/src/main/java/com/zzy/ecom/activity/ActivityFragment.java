@@ -1,4 +1,4 @@
-package com.zzy.ecom;
+package com.zzy.ecom.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
+
+import com.zzy.ecom.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
