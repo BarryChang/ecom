@@ -22,7 +22,8 @@
     <string name="title_activity_already_done_activities">    已经完成的活动</string>
     <string name="title_activity_inside_note">    查看帖子</string>
     <string name="title_activity_inside">    查看活动</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_login">    登录</string>
+    <string name="title_activity_inside_community">    社区资料</string>
 
 
 </resources>

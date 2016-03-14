@@ -5,8 +5,12 @@ import android.os.Bundle;
 import android.app.Activity;
 
 import com.zzy.ecom.R;
+import com.zzy.ecom.entities.TransApp;
+import com.zzy.ecom.entities.User;
 
 public class UserSetting extends Activity {
+
+    private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +19,8 @@ public class UserSetting extends Activity {
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        user = ((TransApp)getApplication()).getUser();
     }
 
 }

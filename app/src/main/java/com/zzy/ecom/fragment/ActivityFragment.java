@@ -1,4 +1,4 @@
-package com.zzy.ecom.activity;
+package com.zzy.ecom.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
 import com.zzy.ecom.R;
+import com.zzy.ecom.activity.AlreadyDoneActivities;
+import com.zzy.ecom.activity.InsideActivity;
+import com.zzy.ecom.customview.ListViewForScrollView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

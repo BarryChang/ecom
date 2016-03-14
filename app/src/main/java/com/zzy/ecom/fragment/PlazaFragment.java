@@ -1,4 +1,4 @@
-package com.zzy.ecom.activity;
+package com.zzy.ecom.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.zzy.ecom.R;
+import com.zzy.ecom.activity.InsideCommunity;
+import com.zzy.ecom.activity.InsideNote;
+import com.zzy.ecom.customview.ListViewForScrollView;
+import com.zzy.ecom.entities.Community;
+import com.zzy.ecom.entities.TransApp;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -23,6 +29,7 @@ import java.util.HashMap;
 public class PlazaFragment extends Fragment {
 
     private View view;
+    private Community community;
 
     @Override
     public View
@@ -30,14 +37,19 @@ public class PlazaFragment extends Fragment {
 
         view = inflater.inflate(R.layout.fragment_plaza, null);
 
-        // Community bkg
-        this.setCommunityBkg(R.drawable.example_bkg);
+        community = ((TransApp)getActivity().getApplication()).getCommunity();
 
-        // notes
-        this.initPlazaNotes();
+        // title with Community name
+        this.setCommunityName(community.getCommunityName());
+
+        // Community bkg
+        this.setCommunityBkg(community.getBkgPicture());
 
         // statistics
         this.initStatistics();
+
+        // notes
+        this.initPlazaNotes();
 
         // scroll view
         ScrollView scrollView = (ScrollView)view.findViewById(R.id.plaza_scroll_view);
@@ -47,10 +59,20 @@ public class PlazaFragment extends Fragment {
     }
 
     private void
+    setCommunityName(String name)
+    {
+        LinearLayout titleBar = (LinearLayout)view.findViewById(R.id.plaza_title_bar);
+        titleBar.setOnClickListener(listener);
+        TextView communityName = (TextView)view.findViewById(R.id.plaza_community_name);
+        communityName.setText(name);
+    }
+
+    private void
     setCommunityBkg(int img)
     {
         ImageView communityBkg = (ImageView)view.findViewById(R.id.community_bkg);
         communityBkg.setImageResource(img);
+        communityBkg.setOnClickListener(listener);
     }
 
     private void
@@ -116,8 +138,16 @@ public class PlazaFragment extends Fragment {
     initStatistics()
     {
         TextView notesNumber = (TextView)view.findViewById(R.id.notes_amount_number);
-        notesNumber.setText(R.string.notes_amount_number);
+        notesNumber.setText(String.valueOf(community.getNotesAmount()));
         TextView usersNumber = (TextView)view.findViewById(R.id.current_user_number);
-        usersNumber.setText(R.string.current_user_number);
+        usersNumber.setText(String.valueOf(community.getMemberAmount()));
     }
+
+    View.OnClickListener listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getActivity(), InsideCommunity.class);
+            startActivity(intent);
+        }
+    };
 }

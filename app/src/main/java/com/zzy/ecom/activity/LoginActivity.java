@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.zzy.ecom.R;
+import com.zzy.ecom.entities.TransApp;
 import com.zzy.ecom.internet.WebAccessUtils;
 import com.zzy.ecom.entities.User;
 
@@ -73,6 +74,7 @@ public class LoginActivity extends Activity {
                         }
                         else {
                             //TODO
+                            ((TransApp)getApplicationContext()).setUser(user);
                             Intent intent = new Intent(LoginActivity.this, MainMenu.class);
                             startActivity(intent);
                         }

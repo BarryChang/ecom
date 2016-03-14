@@ -23,13 +23,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.zzy.ecom.activity.ListViewForScrollView
+            <com.zzy.ecom.customview.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/inside_activity_main_note"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.activity.ListViewForScrollView>
+            </com.zzy.ecom.customview.ListViewForScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,13 +46,13 @@
                     android:textColor="@android:color/white"/>
             </LinearLayout>
 
-            <com.zzy.ecom.activity.ListViewForScrollView
+            <com.zzy.ecom.customview.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/inside_activity_list"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.activity.ListViewForScrollView>
+            </com.zzy.ecom.customview.ListViewForScrollView>
         </LinearLayout>
 
     </ScrollView>

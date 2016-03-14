@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzy.ecom.activity.InsideCommunity">
+    <TextView
+        android:id="@+id/inside_community_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#cc000000"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:text="地理位置:"/>
+    <TextView
+        android:id="@+id/inside_community_location"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:text="社区简介:"/>
+    <TextView
+        android:id="@+id/inside_community_introduction"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#cc000000"
+        android:text="当前成员列表"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+    <ListView
+        android:id="@+id/inside_community_members"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

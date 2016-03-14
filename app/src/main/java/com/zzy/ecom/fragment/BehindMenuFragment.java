@@ -1,4 +1,4 @@
-package com.zzy.ecom.activity;
+package com.zzy.ecom.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.zzy.ecom.R;
+import com.zzy.ecom.activity.UserSetting;
 
 import java.util.ArrayList;
 import java.util.List;

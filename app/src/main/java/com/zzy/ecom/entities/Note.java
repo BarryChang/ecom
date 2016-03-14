@@ -1,5 +1,7 @@
 package com.zzy.ecom.entities;
 
+import java.util.ArrayList;
+
 /**
  * Created by ZhangZhiyi on 3/13/16.
  */
@@ -9,6 +11,25 @@ public class Note {
     private String title;
     private int autherUserID;
     private String textContent;
+    private int[] answers;
+
+    public User
+    getAuthor()
+    {
+        return new User();
+    }
+
+    public void
+    pushNote()
+    {
+        return;
+    }
+
+    public ArrayList<Note>
+    getAnswerNotes()
+    {
+        return null;
+    }
 
     public int getNoteID() {
         return noteID;
@@ -48,5 +69,9 @@ public class Note {
 
     public void setTextContent(String textContent) {
         this.textContent = textContent;
+    }
+
+    public int[] getAnswers() {
+        return answers;
     }
 }

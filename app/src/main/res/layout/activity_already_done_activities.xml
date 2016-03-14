@@ -13,13 +13,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="19">
-            <com.zzy.ecom.activity.ListViewForScrollView
+            <com.zzy.ecom.customview.ListViewForScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:id="@+id/already_activity_list"
                 android:dividerHeight="10dp">
-            </com.zzy.ecom.activity.ListViewForScrollView>
+            </com.zzy.ecom.customview.ListViewForScrollView>
         </ScrollView>
 
     </LinearLayout>

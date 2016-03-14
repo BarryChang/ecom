@@ -9,4 +9,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".activity.UserSetting">
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="40dp"
+                android:text="用户名"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/setting_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="40dp"
+                android:text="等级"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/setting_user_level"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30dp"/>
+        </TableRow>
+
+    </TableLayout>
+
 </RelativeLayout>

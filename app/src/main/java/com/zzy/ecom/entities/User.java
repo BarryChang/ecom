@@ -1,5 +1,7 @@
 package com.zzy.ecom.entities;
 
+import com.zzy.ecom.R;
+
 /**
  * Created by ZhangZhiyi on 3/13/16.
  */
@@ -9,7 +11,20 @@ public class User {
     private String password;
 
     private String nickName;
-    private int level, userStatus;
+    private int level;
+    private int userStatus;
+    private int headPicture;
+
+    public User()
+    {
+        setUserID(11111);
+        setLoginName("default");
+        setPassword("default");
+        setNickName("我们是大能");
+        setLevel(4);
+        setUserStatus(1);
+        setHeadPicture(R.drawable.example_head);
+    }
 
     public int getUserID() {
         return userID;
@@ -57,5 +72,13 @@ public class User {
 
     public void setUserStatus(int userStatus) {
         this.userStatus = userStatus;
+    }
+
+    public int getHeadPicture() {
+        return headPicture;
+    }
+
+    public void setHeadPicture(int headPicture) {
+        this.headPicture = headPicture;
     }
 }

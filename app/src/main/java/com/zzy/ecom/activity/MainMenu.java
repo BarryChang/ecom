@@ -13,6 +13,10 @@ import java.util.ArrayList;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.*;
 import com.zzy.ecom.R;
+import com.zzy.ecom.fragment.ActivityFragment;
+import com.zzy.ecom.fragment.BehindMenuFragment;
+import com.zzy.ecom.fragment.PlazaFragment;
+import com.zzy.ecom.fragment.RecommendFragment;
 
 
 public class MainMenu extends SlidingFragmentActivity {
